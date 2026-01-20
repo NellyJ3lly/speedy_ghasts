@@ -1,1 +1,0 @@
-$execute as @a[advancements={happy_ghast_speed:player_give_hg_speed=true}] at @s anchored eyes positioned ^ ^ ^2 as @n[type=minecraft:happy_ghast,distance=..4] run effect give @s speed $(seconds) $(amplifier)

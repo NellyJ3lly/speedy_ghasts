@@ -1,0 +1,2 @@
+$execute as @a[advancements={speedy_ghasts:player_give_hg_speed=true}] at @s anchored eyes positioned ^ ^ ^2 as @n[type=minecraft:happy_ghast,distance=..4] run effect give @s speed $(seconds) $(amplifier)
+execute as @a[advancements={speedy_ghasts:player_give_hg_speed=true}] at @s as @n[type=minecraft:happy_ghast,distance=..4] at @s run playsound item.spear.lunge_3 voice @a ~ ~ ~ 1 1 0

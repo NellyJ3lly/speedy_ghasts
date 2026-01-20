@@ -15,6 +15,6 @@
     ]
   ],
   "rewards": {
-    "function": "happy_ghast_speed:potion_effects/give_potion"
+    "function": "speedy_ghasts:potion_effects/check_for_happy_ghast"
   }
 }
