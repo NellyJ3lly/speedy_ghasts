@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "happy_ghast": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:potion"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "happy_ghast"
+    ]
+  ],
+  "rewards": {
+    "function": "happy_ghast_speed:potion_effects/give_potion"
+  }
+}
