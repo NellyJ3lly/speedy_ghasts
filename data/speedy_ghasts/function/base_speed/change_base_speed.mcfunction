@@ -1,0 +1,1 @@
+$execute as @e[type=happy_ghast] run attribute @s flying_speed base set $(base_speed)

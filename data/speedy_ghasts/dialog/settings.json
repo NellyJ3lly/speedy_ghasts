@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Speedy Ghast Config"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "base_speed",
+      "label": {
+        "text": "Base Speed"
+      },
+      "start": 0.0,
+      "end": 0.2,
+      "step":0.01,
+      "initial": 0.07
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "speed_above_320",
+      "label": {
+        "text": "Ghast Speed above 320 blocks"
+      },
+     "start": 0.0,
+      "end": 0.2,
+      "step":0.01,
+      "initial": 0.1
+    },
+     {
+      "type": "minecraft:boolean",
+      "key": "can_boost_above_320",
+      "label": {
+        "text": "Can Boost Above 320 blocks"
+      },
+      "initial": true
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "can_apply_potions",
+      "label": {
+        "text": "Can Apply Speed Potions"
+      },
+      "initial": true
+    }
+  ],
+  "actions": [
+    {
+      "label": "Apply Settings",
+      "tooltip": {
+        "text": ""
+      },
+      "width": 150,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "/function speedy_ghasts:apply_settings {base_speed:$(base_speed),speed_above_320:$(speed_above_320),can_boost_above_320:$(can_boost_above_320),can_apply_potions:$(can_apply_potions)}"
+      }
+    },
+    {
+      "label": "Cancel"
+    }
+  ]
+}
